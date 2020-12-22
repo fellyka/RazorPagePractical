@@ -28,6 +28,19 @@ namespace RazorPagesPractical.Services
             return employees.FirstOrDefault(e => e.Id == id);
         }
 
+        public Employee UpdateEmployee(Employee updatedEmployee)
+        {
+            Employee employee = employees.FirstOrDefault(e => e.Id == updatedEmployee.Id);
+            if(employee != null)
+            {
+                employee.Name = updatedEmployee.Name;
+                employee.Email = updatedEmployee.Email;
+                employee.Department = updatedEmployee.Department;
+            }
+
+            return employee;
+        }
+
         IEnumerable<Employee> IEmployeeRepository.GetEmployees()
         {
             return employees;
