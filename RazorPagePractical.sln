@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesPractical", "RazorPagePractical\RazorPagesPractical.csproj", "{04EEEE44-55B8-41FB-84C9-C6AFED7073BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesPractical", "RazorPagePractical\RazorPagesPractical.csproj", "{04EEEE44-55B8-41FB-84C9-C6AFED7073BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesPractical.Models", "RazorPagesPractical.Models\RazorPagesPractical.Models.csproj", "{40B2086F-802F-4DD2-B006-6B0BBB786DBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesPractical.Models", "RazorPagesPractical.Models\RazorPagesPractical.Models.csproj", "{40B2086F-802F-4DD2-B006-6B0BBB786DBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesPractical.Services", "RazorPagesPractical.Services\RazorPagesPractical.Services.csproj", "{0567DEA1-20AA-4497-98D2-4A42946722A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesPractical.Services", "RazorPagesPractical.Services\RazorPagesPractical.Services.csproj", "{0567DEA1-20AA-4497-98D2-4A42946722A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,5 +1,6 @@
 ﻿using RazorPagesPractical.Models;
 using System.Collections.Generic;
+using System.Linq;
 using System;
 
 namespace RazorPagesPractical.Services
@@ -20,6 +21,11 @@ namespace RazorPagesPractical.Services
                                 PhotoPath = "mark.jpg"},
                 new Employee() {Id = 4, Name = "Gerard", Department = Dept.IT, Email  = "gerard@fellyka.co.za"}
             };
+        }
+
+        public Employee GetEmployee(int id)
+        {
+            return employees.FirstOrDefault(e => e.Id == id);
         }
 
         IEnumerable<Employee> IEmployeeRepository.GetEmployees()
