@@ -28,6 +28,11 @@ namespace RazorPagesPractical.Pages.Employees
         [BindProperty]
         public IFormFile Photo { get; set; }
 
+        [BindProperty]
+        public bool Notify { get; set; }
+
+        public string Message { get; set; }
+
         public IActionResult OnGet(int id)
         {
           Employee =  repo.GetEmployee(id);
@@ -60,6 +65,21 @@ namespace RazorPagesPractical.Pages.Employees
             return RedirectToPage("Index");
         }
 
+        //Handler method for the first form
+        public void OnPostUpdateNotificationPreferences(int id)
+        {
+            if(Notify)
+            {
+                Message = "Thank you for turning on notifications";
+            }
+
+            else
+            {
+                Message = "You have turned off email notifications";
+            }
+
+            Employee = repo.GetEmployee(id);
+        }
         
         private string ProcessUploadFile()
         {

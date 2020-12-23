@@ -11,6 +11,6 @@ namespace RazorPagesPractical.Models
         public string Email { get; set; }
         public string PhotoPath { get; set; }
         public Dept? Department { get; set; }
-        
+        //17
     }
 }
